@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aasish Shrestha - Geomatics Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-mode">
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#hero" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" aria-label="Toggle theme" onclick="toggleTheme()">
+      <i class="fas fa-sun"></i>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>HOLA!  Aasish Shrestha</h1>
+    <p>Geomatics Engineer | Passionate about Geospatial Solutions</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- About Section -->
+<section id="about" data-aos="fade-up">
+  <div class="container">
+    <div class="profile-img" id="profile-img" style="background-image: url(profile.JPG);" onclick="toggleProfile()">
+      <div class="profile-overlay">
+    
+      </div>
+    </div>
+    <div class="bio">
+      <h2>About Me</h2>
+      <p>Hello! I'm Aasish Shrestha, a Geomatics Engineering undergraduate at Kathmandu University with a passion for geospatial technologies and data analysis. I am learning in creating innovative solutions using GIS, remote sensing, and drone technology. My goal is to leverage technology to solve real-world challenges in mapping, urban planning, and environmental management.</p>
+      <div class="full-profile" id="full-profile">
+        <h3>Full Profile</h3>
+        <p><strong>Education:</strong> B.E. in Geomatics Engineering, Kathmandu University</p>
+        <p><strong>Skills Summary:</strong> Proficient in ArcGIS, QGIS, Pix4D, AutoCAD, Python (pandas, geopandas), and drone photogrammetry.</p>
+      </div>
+      <div class="expertise">
+        <h3>Expertise</h3>
+        <div class="progress-bar">
+          <p>-GIS & Mapping</p>
+          <div class="progress" data-progress="90"></div>
+        </div>
+        <div class="progress-bar">
+          <p>-Drone Technology</p>
+          <div class="progress" data-progress="85"></div>
+        </div>
+        <div class="progress-bar">
+          <p>-Data Analysis</p>
+          <div class="progress" data-progress="80"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Skills Section -->
+  <section id="skills" data-aos="fade-up">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill"><i class="fas fa-map-marked-alt"></i><p>GIS</p></div>
+        <div class="skill"><i class="fas fa-drone"></i><p>Drone Mapping</p></div>
+        <div class="skill"><i class="fas fa-drafting-compass"></i><p>AutoCAD</p></div>
+        <div class="skill"><i class="fas fa-code"></i><p>Python</p></div>
+        <div class="skill"><i class="fas fa-globe"></i><p>Remote Sensing</p></div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="projects" data-aos="fade-up">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        
+        <div class="project-card">
+            <img src="aqi.jpg" alt="Air Quality Project">
+            <div class="content">
+              <h3>Air Quality Mapping by GIS</h3>
+              <p>Designed interactive maps to visualize air quality data, aiding environmental monitoring and policy decisions.</p>
+              <a href="airquality.pdf" download style="font-size: 0.9rem; color: #4CAF50; text-decoration: underline;">
+                <br><br><br>
+                <i class="fas fa-download" style="margin-right: 4px;"></i>Download Report
+              </a>
+              
+            </div>
+          </div>
+        <div class="project-card">
+          <img src="landslid.jpg" alt="Landslide Project">
+          <div class="content">
+            <h3>Landslide Susceptibility Analysis by GIS</h3>
+            <p>Developed a GIS-based model to assess landslide risk in mountainous regions, integrating terrain and weather data.</p>
+            <a href="airquality.pdf" download style="font-size: 0.9rem; color: #4CAF50; text-decoration: underline;">
+                <br>
+                <i class="fas fa-download" style="margin-right: 4px;"></i>Download Report
+              </a>
+              
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="dro.jpg" alt="DTM/DSM Project">
+          <div class="content">
+            <h3>DTM/DSM by Orthophoto of Drone</h3>
+            <p>Created high-resolution Digital Terrain and Surface Models using drone-captured orthophotos for urban planning.</p>
+            <a href="airquality.pdf" download style="font-size: 0.9rem; color: #4CAF50; text-decoration: underline;">
+                <i class="fas fa-download" style="margin-right: 4px;"></i>Download Report
+              </a>
+              
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact" data-aos="fade-up">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="social-links">
+        <a href="https://github.com/AasishStha264" target="_blank" aria-label="GitHub" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank" aria-label="LinkedIn" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:aasish.email@example.com" aria-label="Email" data-tooltip="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="phone-number"><i class="fas fa-phone"></i> +9845322255</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Aasish Shrestha. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
